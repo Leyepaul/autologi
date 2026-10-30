@@ -1,0 +1,37 @@
+/* THE COLOUR CODE. Change a value here and the whole app updates.
+   Unit colours live in src/data/units.js (each unit has its own). */
+:root {
+  /* Brand: main buttons, progress bar, selected answers */
+  --brand: #1d5fe0;
+  --brand-dark: #164bb3;
+  --brand-soft: #e3eeff;
+
+  /* Text and surfaces */
+  --ink: #14213d;        /* headings, ladder rails */
+  --text: #2b3445;       /* body text */
+  --muted: #5b6578;      /* secondary text */
+  --bg: #ffffff;
+  --bg-soft: #f4f6fa;
+  --line: #dde2ea;
+
+  /* Feedback: correct / wrong / powered */
+  --success: #1a7f37;
+  --success-dark: #14632c;
+  --success-soft: #dff6e3;
+  --danger: #c8323a;
+  --danger-dark: #a2262d;
+  --danger-soft: #fde4e5;
+
+  /* XP and the lamp coil */
+  --amber: #ffb400;
+  --amber-dark: #8a5a00;
+
+  /* Match-question pair colours: pair 1 = A, pair 2 = B ... */
+  --pair-1: #1d5fe0; --pair-1-soft: #e3eeff;
+  --pair-2: #c2410c; --pair-2-soft: #ffe9db;
+  --pair-3: #7c3aed; --pair-3-soft: #eee7ff;
+  --pair-4: #0f766e; --pair-4-soft: #d9f5f1;
+  --pair-5: #be185d; --pair-5-soft: #fde3ef;
+
+  --radius: 16px;
+}

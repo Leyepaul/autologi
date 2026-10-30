@@ -1,0 +1,137 @@
+// Lesson 1.1. See CONTENT-GUIDE.md in the project root for question templates.
+export default {
+  id: '1.1',
+  title: 'What is Automation?',
+  intro: {
+    mascot: '🤖',
+    heading: 'Making machines work smarter',
+    paragraphs: [
+      'Automation means using machines and control systems to do a task with little or no human effort.',
+      'Most automated systems follow one loop: a sensor detects something, a controller decides, and an actuator acts.',
+    ],
+  },
+  questions: [
+  {
+    id: 'q1',
+    type: 'multiple_choice',
+    prompt: 'What is industrial automation?',
+    options: [
+      'The use of technology and control systems to operate industrial processes with minimal human intervention',
+      'The process of manually operating machines in a factory',
+      'The design of buildings for industrial facilities',
+      'The process of manufacturing electrical cables',
+    ],
+    answer: 0,
+    explanation: 'Industrial automation uses control systems, sensors, actuators, and other technologies to operate and monitor industrial processes with minimal human intervention.',
+  },
+  {
+    id: 'q2',
+    type: 'multiple_choice',
+    prompt: 'What is the main purpose of an industrial control system?',
+    options: [
+      'To design industrial buildings',
+      'To monitor and control a process or machine',
+      'To replace all electrical components in a factory',
+      'To increase the physical size of machines',
+    ],
+    answer: 1,
+    explanation: 'A control system monitors a process and uses inputs, logic, and outputs to control how a machine or process operates.',
+  },
+  {
+    id: 'q3',
+    type: 'multiple_choice',
+    prompt: 'What does PLC stand for?',
+    options: [
+      'Process Logic Controller',
+      'Programmable Logic Controller',
+      'Programmable Load Controller',
+      'Process Line Computer',
+    ],
+    answer: 1,
+    explanation: 'PLC stands for Programmable Logic Controller. It is an industrial computer commonly used to control machines and processes.',
+  },
+  {
+    id: 'q4',
+    type: 'multiple_choice',
+    prompt: 'Which of the following is an example of an input device in an automated system?',
+    options: [
+      'Motor',
+      'Solenoid valve',
+      'Proximity sensor',
+      'Contactor',
+    ],
+    answer: 2,
+    explanation: 'A proximity sensor detects the presence of an object and provides information to the control system, making it an input device.',
+  },
+  {
+    id: 'q5',
+    type: 'true_false',
+    prompt: 'A motor is generally considered an output device in an automated control system.',
+    answer: true,
+    explanation: 'A motor receives a command from the control system and produces movement, making it an output device.',
+  },
+  {
+    id: 'q6',
+    type: 'multiple_choice',
+    prompt: 'What is the primary function of a sensor in an automated system?',
+    options: [
+      'To provide power to the PLC',
+      'To detect or measure a physical condition',
+      'To protect the electrical panel from dust',
+      'To program the PLC',
+    ],
+    answer: 1,
+    explanation: 'Sensors detect or measure physical conditions such as temperature, pressure, level, position, and flow, then provide that information to the control system.',
+  },
+  {
+    id: 'q7',
+    type: 'multiple_choice',
+    prompt: 'What is an actuator?',
+    options: [
+      'A device that detects a physical condition',
+      'A device that stores PLC programs',
+      'A device that converts a control command into physical action',
+      'A device used only to display process information',
+    ],
+    answer: 2,
+    explanation: 'An actuator receives a control command and produces a physical action. Examples include motors, solenoid valves, and pneumatic actuators.',
+  },
+  {
+    id: 'q8',
+    type: 'drag_order',
+    prompt: 'Arrange these components in the correct order for a basic automated control system.',
+    items: [
+      'A sensor detects a change',
+      'The controller processes the information',
+      'An actuator carries out an action',
+    ],
+    explanation: 'The basic sequence is detect, decide, act. The sensor provides information, the controller processes it according to its logic, and the actuator performs the commanded action.',
+  },
+  {
+    id: 'q9',
+    type: 'multiple_choice',
+    prompt: 'A sensor detects that a product has reached the end of a conveyor. What would the control system most likely do with this information?',
+    options: [
+      'Use it to make a control decision',
+      'Convert it directly into electrical power',
+      'Delete the PLC program',
+      'Increase the physical size of the product',
+    ],
+    answer: 0,
+    explanation: 'The controller uses sensor information to make decisions based on its programmed logic. In this case, it could stop the conveyor or trigger another machine operation.',
+  },
+  {
+    id: 'q10',
+    type: 'multiple_choice',
+    prompt: 'Which statement best describes the relationship between a sensor, controller, and actuator?',
+    options: [
+      'The sensor performs the physical action, the controller supplies power, and the actuator measures the process',
+      'The sensor provides information, the controller makes decisions, and the actuator performs the commanded action',
+      'The actuator provides information, the sensor makes decisions, and the controller performs physical movement',
+      'All three devices perform exactly the same function',
+    ],
+    answer: 1,
+    explanation: 'In a typical automated system, the sensor provides process information, the controller processes it and makes decisions, and the actuator carries out the resulting command.',
+  },
+  ]
+};

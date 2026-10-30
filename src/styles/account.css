@@ -1,0 +1,14 @@
+/* Welcome, account screen, email form */
+.stack { display: flex; flex-direction: column; gap: 12px; width: 100%; max-width: 360px; align-items: stretch; margin: 0 auto; }
+.stack .body-text { margin: 0; }
+.card.sent { text-align: left; }
+.card.sent p { margin: 6px 0 12px; font-weight: 600; line-height: 1.5; }
+.card p.body-text { margin: 6px 0 14px; }
+
+.guest-banner {
+  width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  margin-bottom: 24px; padding: 12px 16px; text-align: left;
+  background: var(--brand-soft); color: var(--ink); font-weight: 700;
+  border: 2px solid var(--brand); border-radius: var(--radius);
+}
+.guest-banner strong { color: var(--brand-dark); white-space: nowrap; }

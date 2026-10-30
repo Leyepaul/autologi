@@ -1,0 +1,20 @@
+.btn {
+  border: 0;
+  border-radius: var(--radius);
+  padding: 14px 32px;
+  min-width: 150px;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+  transition: transform 0.08s, box-shadow 0.08s;
+}
+.btn--primary { background: var(--brand); box-shadow: 0 4px 0 var(--brand-dark); }
+.btn--success { background: var(--success); box-shadow: 0 4px 0 var(--success-dark); }
+.btn--danger { background: var(--danger); box-shadow: 0 4px 0 var(--danger-dark); }
+.btn--ghost { background: var(--bg); color: var(--brand); border: 2px solid var(--line); box-shadow: 0 4px 0 var(--line); }
+.btn:active:not(:disabled) { transform: translateY(4px); box-shadow: none; }
+.btn:disabled { background: var(--line); color: #a3abb8; box-shadow: none; cursor: not-allowed; }
+
+.link-button { background: none; border: 0; color: var(--muted); font-weight: 700; text-decoration: underline; margin: 40px auto 0; display: block; }
