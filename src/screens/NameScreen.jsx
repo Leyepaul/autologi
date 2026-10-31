@@ -23,7 +23,7 @@ export default function NameScreen({ onSubmit }) {
   return (
     <div className="screen">
       <form className="screen__body name-form" onSubmit={handleSubmit}>
-        <div className="result__emoji">🤖</div>
+        <div className="result__emoji"><img src="/images/autologic-robot.png" alt="Autologic mascot" /></div>
         <h1 className="title">Pick a player name</h1>
         <p className="body-text">Other players will see this on the leaderboard. Please don't use your real name.</p>
         <input

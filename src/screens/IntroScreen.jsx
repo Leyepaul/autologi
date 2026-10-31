@@ -11,7 +11,7 @@ export default function IntroScreen({ lesson, unit, onStart, onBack }) {
         <p className="muted" style={{ color: unit.color }}>Unit {unit.id}: {unit.title}</p>
         <h1 className="title">{lesson.title}</h1>
         <div className="mascot-row">
-          <span className="mascot">{intro.mascot}</span>
+          <div className="mascot"><img src="/images/autologic-robot.png"alt="Autologic mascot" /></div>
           <div className="bubble">{intro.heading}</div>
         </div>
         {intro.rung && (

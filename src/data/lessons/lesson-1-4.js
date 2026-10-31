@@ -99,7 +99,7 @@ intro: {
   {
     id: 'q8',
     type: 'multiple_choice',
-    prompt: 'A conveyor should start only after a product is detected and remain running until the product reaches the next sensor. What type of control concept is most relevant?',
+    prompt: 'A conveyor motor should start only after a product is detected and remain running until the product reaches the next sensor. What type of control concept is most relevant?',
     options: [
       'Sequence control',
       'Network addressing',

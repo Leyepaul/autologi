@@ -23,7 +23,7 @@ export default function WelcomeScreen({ onStartGuest, onLogin }) {
   return (
     <div className="screen">
       <main className="screen__body name-form">
-        <div className="result__emoji">🤖</div>
+        <div className="result__emoji"><img src="/images/autologic-robot.png" alt="Autologic mascot" /></div>
         <h1 className="title"><Wordmark /></h1>
         {mode === 'menu' ? (
           <div className="stack">

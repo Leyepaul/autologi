@@ -1,5 +1,5 @@
 export default {
-  id: '1.2',
+id: '1.2',
 title: 'Know Your Tools',
 intro: {
   mascot: '🤖',
