@@ -5,6 +5,7 @@ import CheckBar from '../components/CheckBar';
 import QuestionRenderer from '../components/questions/QuestionRenderer';
 import SoundToggle from '../components/SoundToggle';
 import { play } from '../audio/sounds';
+import { useStopwatch } from '../hooks/useStopwatch';
 
 // just above  if (L.finished) return null;  add:
 // useEffect(() => {
@@ -17,10 +18,15 @@ import { play } from '../audio/sounds';
 
 export default function LessonScreen({ lesson, onFinish, onQuit }) {
   const L = useLesson(lesson.questions);
+  const clock = useStopwatch();
+
 
   useEffect(() => {
-    if (L.finished) onFinish(L.stats);
-  }, [L.finished]);
+    if (L.finished) {
+        clock.stop(); // freeze the time
+        onFinish({ ...L.stats, seconds: clock.getSeconds() });
+      }
+    }, [L.finished]);
 
   useEffect(() => {
   if (L.result === 'correct') play('correct');

@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { play } from '../audio/sounds';
+import { formatTime } from '../utils/stopwatch';
 
 export default function ResultScreen({ stats, onRestart, onHome }) {
   const played = useRef(false); // stops a double fanfare in development mode
@@ -18,6 +19,7 @@ export default function ResultScreen({ stats, onRestart, onHome }) {
         <div className="stats">
           <div className="stat stat--xp"><span>Total XP</span><strong>{stats.xp}</strong></div>
           <div className="stat stat--acc"><span>Accuracy</span><strong>{stats.accuracy}%</strong></div>
+          {stats.seconds !== undefined && (<div className="stat stat--time"><span>Time</span><strong>{formatTime(stats.seconds)}</strong></div>)}
         </div>
       </main>
       <footer className="checkbar checkbar--idle">

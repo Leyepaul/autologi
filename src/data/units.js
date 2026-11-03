@@ -25,11 +25,11 @@ export const units = [
     color: '#c2410c',
     colorDark: '#9a3412',
     lessons: [
-      { id: '2.1', title: 'What is a PLC?', icon: '🖥️' },
-      { id: '2.2', title: 'Contacts and coils', icon: '🔌' },
-      { id: '2.3', title: 'AND, OR, NOT logic', icon: '🔀' },
-      { id: '2.4', title: 'Start/stop motor circuit', icon: '🔁' },
-      { id: '2.5', title: 'Inputs, outputs, addressing', icon: '🏷️' },
+      { id: '2.1', title: 'PLC Fundamentals', icon: '🖥️' },
+      { id: '2.2', title: 'Anatomy of a PLC', icon: '🧩' },
+      { id: '2.3', title: 'Understanding PLC Inputs & Outputs', icon: '📥' },
+      { id: '2.4', title: 'How PLCs Work', icon: '🔁' },
+      { id: '2.5', title: 'Your First PLC Challenge', icon: '🎯' },
     ],
   },
   {

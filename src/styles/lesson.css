@@ -35,7 +35,7 @@
 .result { text-align: center; padding-top: 64px; }
 .result__emoji { display: flex; align-items: center; justify-content: center;}
 .result__emoji img {width: 100px; height: 100px; object-fit: contain;}
-/* .result__emoji { font-size: 5rem; } */
+.result__emoji { font-size: 5rem; }
 .stats { display: flex; justify-content: center; gap: 16px; margin-top: 24px; }
 .stat { border: 2px solid; border-radius: var(--radius); min-width: 140px; overflow: hidden; font-weight: 800; }
 .stat span { display: block; padding: 6px; color: #fff; font-size: 0.8rem; }
@@ -45,3 +45,9 @@
 .icon-button { background: none; border: 0; font-size: 1.3rem; line-height: 1; padding: 4px; cursor: pointer; }
 .wordmark b { color: var(--brand); font-weight: inherit; }
 .checkbar { padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
+.stopwatch { flex-shrink: 0; font-weight: 800; font-size: 0.9rem; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.stats { flex-wrap: wrap; gap: 12px; }
+.stat { min-width: 100px; flex: 1 1 100px; max-width: 150px; }
+.stat--time { border-color: var(--brand); }
+.stat--time span { background: var(--brand); }
+.stat--time strong { color: var(--brand-dark); font-variant-numeric: tabular-nums; }
